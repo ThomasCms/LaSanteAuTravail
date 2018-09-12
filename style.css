@@ -7,9 +7,8 @@ section{
 /* --- style CSS first_page --- */
 
 .first_page{
-	margin-top: 5em;
-	margin-bottom: 5em;
-	height:50em;
+	margin-top: 0em;
+	margin-bottom: 0em;
 
 
 }
@@ -17,7 +16,7 @@ section{
 	padding-top: 5em;
 }
 .first_page img{
-	padding-top:5em;
+	margin-top:5em;
 }
 
 .more{
