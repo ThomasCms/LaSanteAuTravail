@@ -93,11 +93,47 @@
 
 		</section>
 
-		<footer>
-			<div classe="container-fluid">
-				
-			</div>
-		</footer>
+	<footer>
+		<div class="container">
+		<!-- Formulaire -->
+			<div class="row">
+		      	<div class="col-md-6">
+
+		      		<!-- bouton déroulant -->
+		      		<div class="d-flex justify-content-center">
+		      		<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Nous contacter</a>
+		      		</div>
+
+		      		<!-- le formulaire devra se dérouler quant on clique sur le bouton -->
+			      	<form>
+					    <div class="form-group">
+					    <label for="nomPrenomForm">Nom et prénom :</label>
+					    <input type="text" class="form-control" id="nomPrenomForm" placeholder="Nom Prenom">
+					    </div>
+						<div class="form-group">
+						<label for="adresseMailForm">Adresse mail :</label>
+						<input type="email" class="form-control" id="adresseMailForm" placeholder="monemail@boitemail.com">
+						</div>
+
+					    <div class="form-group">
+					    <label for="messageForm">Message :</label>
+					    <textarea class="form-control" id="messageForm" placeholder="Mon message" rows="4"></textarea>
+					    </div>
+				    </form>
+				 </div>
+
+		      		<!-- Infos légales etc -->
+
+		      	<div class="col-md-6">
+		      		<p>Nom de l'association <br />
+
+		      		Adresse</p>
+
+		      		<p><a href="#">Mentions légales</a></p>
+		      	</div>
+		    </div>
+		 </div>
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
