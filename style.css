@@ -9,25 +9,25 @@
 .first_page{
 	margin-top: 0em;
 	margin-bottom: 0em;
-
-
 }
+
 .first_page h1{
 	padding-top: 5em;
 }
+
 .first_page img{
-	margin-top:5em;
+	margin-top: 5em;
 }
 
 .more{
-	margin-right: 10rem
+	margin-right: 10em;
 }
 
 /*  ---style CSS why ---*/
 .why{
 	margin-top: 10em;
 	margin-bottom: 10em;
-	line-height:3;
+	line-height: 3;
 	font-size: 1em;
 }
 
@@ -35,7 +35,7 @@
 /* ----- Style CSS CARDS ----- */
 /* Par défaut, collapse est à hauteur zéro, on force sa hauteur, on cache le contenu qui déborde */
 .card .collapse {
-	position:relative;
+	position: relative;
 	display: block;
 	overflow: hidden;
 	height: 9.5em;
@@ -52,13 +52,13 @@
 }
 
 .card-body .showp {
-	height:3em;
-	line-height:3em;
+	height: 3em;
+	line-height: 3em;
 	text-align: center;
 }
 
 .card-body a.collapsed, .card-body a:not(.collapsed) {
-	border:1px solid #000;
+	border: 1px solid #000;
 	padding: 0.2em;
 }
 /* Applique au balise a qui sont associées à la classe .collapsed, le contenu ci-dessous */
@@ -71,10 +71,15 @@
 }
 
 .card-body .imgView {
-	float:left;
+	float: left;
 	margin: 0 0.5em 0 0;
 }
 
 @media only screen and (max-width: 320px) {
 	.card-body .imgView {float: none;text-align: center;}
+}
+
+a
+{
+	color: #000000;
 }
