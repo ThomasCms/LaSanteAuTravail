@@ -5,7 +5,7 @@ il sagit d'un site internet commandé par une association visant à promouvoir l
 gestes/activités simple à mettre en place.
 
 Participants:
-Vivien Piveteau (alias Vivpiv)
-Amandine Turpin (alias Amandine1345)
-Patricia Batjorm (alias PBAT75)
-Thomas Coumes (alias ThomasCms)
+Vivien Piveteau (alias Vivpiv),
+Amandine Turpin (alias Amandine1345),
+Patricia Batjorm (alias PBAT75) 
+et Thomas Coumes (alias ThomasCms)
