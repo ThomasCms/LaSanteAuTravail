@@ -1,6 +1,6 @@
 /*----style CSS container---*/
-section{
-		background-image: url("https://via.placeholder.com/1950x750/81F7F3");
+.bg{
+		background-image: url("https://via.placeholder.com/1950x850/81F7F3");
 		background-repeat: no-repeat ;
 }
 
