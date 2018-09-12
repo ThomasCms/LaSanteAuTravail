@@ -31,6 +31,15 @@
 	font-size: 1em;
 }
 
+/* ----- Style CSS TEMOIGNAGE ----- */
+.imgTemoin{
+	width: 65px;
+	height: 65px;
+}
+
+.marginTemoin{
+	margin-bottom: 5em;
+}
 
 /* ----- Style CSS CARDS ----- */
 /* Par défaut, collapse est à hauteur zéro, on force sa hauteur, on cache le contenu qui déborde */
