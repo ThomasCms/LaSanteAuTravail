@@ -1,0 +1,33 @@
+/*----style CSS container---*/
+section{
+		background-image: url("https://via.placeholder.com/1950x750/81F7F3");
+		background-repeat: no-repeat ;
+}
+
+/* --- style CSS first_page --- */
+
+.first_page{
+	margin-top: 5em;
+	margin-bottom: 5em;
+	height:50em;
+
+
+}
+.first_page h1{
+	padding-top: 5em;
+}
+.first_page img{
+	padding-top:5em;
+}
+
+.more{
+	margin-right: 10rem
+}
+
+/*  ---style CSS why ---*/
+.why{
+	margin-top: 10em;
+	margin-bottom: 10em;
+	line-height:3;
+	font-size: 1em;
+}
