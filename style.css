@@ -78,3 +78,8 @@ section{
 @media only screen and (max-width: 320px) {
 	.card-body .imgView {float: none;text-align: center;}
 }
+
+a
+{
+	color: #000000;
+}
