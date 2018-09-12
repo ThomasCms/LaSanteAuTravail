@@ -30,3 +30,51 @@ section{
 	line-height:3;
 	font-size: 1em;
 }
+
+
+/* ----- Style CSS CARDS ----- */
+/* Par défaut, collapse est à hauteur zéro, on force sa hauteur, on cache le contenu qui déborde */
+.card .collapse {
+	position:relative;
+	display: block;
+	overflow: hidden;
+	height: 9.5em;
+}
+
+/* Lors de l'ouverture, définition de la hauteur de la div qui est égale à la hauteur du contenu */
+.card .collapse.show {
+  height: auto;
+}
+
+/* Lors de la transition de fermeture, indique la taille finale que doit avoir la div */
+.card .collapsing {
+	height: 9.5em;
+}
+
+.card-body .showp {
+	height:3em;
+	line-height:3em;
+	text-align: center;
+}
+
+.card-body a.collapsed, .card-body a:not(.collapsed) {
+	border:1px solid #000;
+	padding: 0.2em;
+}
+/* Applique au balise a qui sont associées à la classe .collapsed, le contenu ci-dessous */
+.card-body a.collapsed:after {
+  content: '+ Show More';
+}
+/* Applique au balise a qui NE SONT PAS associées à la classe .collapsed, le contenu ci-dessous */
+.card-body a:not(.collapsed):after {
+  content: '- Show Less';
+}
+
+.card-body .imgView {
+	float:left;
+	margin: 0 0.5em 0 0;
+}
+
+@media only screen and (max-width: 320px) {
+	.card-body .imgView {float: none;text-align: center;}
+}
