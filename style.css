@@ -234,3 +234,41 @@ h6
 	padding: 10em 0;
 
 }
+
+/* navbar */
+
+nav
+{
+	background-color: rgb(120, 125, 110, 0.8); /* la 4 eme valeur définis l'opacité (valable uniquement en rgb)*/
+}
+
+.nav-link
+{
+	color: white;
+}
+
+.navbar {
+	padding: 0, 0, 0, 0;
+}
+
+.navbar-brand
+{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* footer */
+
+footer
+{
+	background-color: rgb(120, 125, 110, 0.8);
+}
+
+.showp
+{
+	padding-top: 3.5%;
+}
+
+.pb-5, .py-5 {
+    padding-bottom: 0rem!important;
+}
