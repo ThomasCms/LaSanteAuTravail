@@ -133,3 +133,14 @@ h6
 {
 	font-size: 1.7em;
 }
+
+/* Voile images d'acceuil */
+.voile
+{
+	opacity: 0.6;
+}
+
+.images:hover .voile
+{
+	opacity: 1;
+}
