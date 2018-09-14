@@ -45,6 +45,17 @@ html, body{
 .badge{
 		background-color: #061539;
 		z-index: 4;
+
+}
+.images{
+	position: relative;
+}
+.titre{
+	position: absolute;
+	z-index: 2;
+	font-weight: bold;
+	top: 60%;
+	left:20%;
 }
 /*couleur des thématiques*/
 .posture{
@@ -211,4 +222,7 @@ h6
 .images:hover .voile
 {
 	opacity: 1;
+}
+.images:hover .titre{
+	color:#000000;
 }
