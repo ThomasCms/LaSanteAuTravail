@@ -62,7 +62,7 @@ html, body{
 	border: 0.5rem solid #db3a06 ;
 }
 .activity{
-	border: 0.5rem solid red ;
+	border: 0.5rem solid #429188 ;
 }
 .testimony{
 	border: 0.5rem solid blue ;
@@ -74,7 +74,7 @@ html, body{
 	margin-bottom: 5em;
 }
 .extraitText {
-	color:#01A9DB;
+	color:#429188;
 	font-size:1.8em;
 	text-align: center;
 	font-style: italic;
@@ -124,7 +124,7 @@ html, body{
 .card-body a.collapsed, .card-body a:not(.collapsed) {
 	border-radius: 5px;
 	padding: 0.5em;
-	background-color: #01A9DB;
+	background-color: #429188;
 	color:#FFF;
 	/*font-weight: 600;*/
 }
@@ -137,9 +137,9 @@ html, body{
   content: '▲ Replier';
 }
 
-.card {border:1px solid #01A9DB;}
+.card {border:1px solid #429188;}
 .card-header {
-	background-color: #01A9DB;
+	background-color: #429188;/*#01A9DB*/;
 	color:#FFF;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -190,7 +190,7 @@ a
 
 a, p
 {
-	font-size: 1.3em;
+	font-size: 1em;
 }
 
 h1
