@@ -225,6 +225,12 @@ h6
 {
 	opacity: 1;
 }
+
 .images:hover .titre{
-	display: none;
+	display: none;}
+
+
+.paddingSection{
+	padding: 10em 0;
+
 }
