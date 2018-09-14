@@ -216,7 +216,9 @@ h6
 /* Voile images d'acceuil */
 .voile
 {
-	opacity: 0.6;
+	opacity: 0.5;
+
+
 }
 
 .images:hover .voile
@@ -224,5 +226,5 @@ h6
 	opacity: 1;
 }
 .images:hover .titre{
-	color:#000000;
+	display: none;
 }
