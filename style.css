@@ -42,6 +42,20 @@ html, body{
 .more{
 	margin-right: 10em;
 }
+.badge{
+		background-color: #061539;
+		z-index: 4;
+}
+/*couleur des thématiques*/
+.posture{
+	border: 0.5rem solid #db3a06 ;
+}
+.activity{
+	border: 0.5rem solid red ;
+}
+.testimony{
+	border: 0.5rem solid blue ;
+}
 
 /*  ---style CSS why ---*/
 .why{
@@ -131,6 +145,21 @@ html, body{
 
 
 @media only screen and (max-width: 320px) {
+	html, body {
+		width: auto;
+		height: auto;
+
+	}
+	.pages{
+		background-color: #FFFFFF;
+	}
+	.first_page h1{
+		padding-top: 1em;
+	}
+	.bg{
+		height: auto;
+	}
+
 	.card-body .imgView {float: none;text-align: center;}
 	html, body{
 		width: auto;
