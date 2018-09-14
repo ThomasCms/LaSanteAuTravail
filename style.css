@@ -58,8 +58,8 @@ html, body{
 	left:20%;
 }
 /*couleur des thématiques*/
-.posture{
-	border: 0.5rem solid #db3a06 ;
+.rounded-circle{
+	background-color: #db3a06 ;
 }
 .activity{
 	border: 0.5rem solid #429188 ;
@@ -216,7 +216,7 @@ h6
 /* Voile images d'acceuil */
 .voile
 {
-	opacity: 0.5;
+	opacity: 0.2;
 
 
 }
