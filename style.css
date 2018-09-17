@@ -48,10 +48,14 @@ h2{
 .badge{
 		background-color: #061539;
 		z-index: 4;
+		height: 2rem;
 
 }
 .images{
 	position: relative;
+	margin-left: 2rem;
+	margin-right: 2rem;
+
 }
 .titre{
 	position: absolute;
@@ -62,7 +66,9 @@ h2{
 }
 /*couleur des thématiques*/
 .posture{
-	border: 0.5rem solid #db3a06 ;
+	border: 0.5rem solid rgba(215, 107, 115);
+	background-color: rgba(215, 107, 115, 1);
+
 }
 .activity{
 	border: 0.5rem solid red ;
