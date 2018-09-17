@@ -1,6 +1,8 @@
 /*----style CSS container---*/
-
-
+@font-face{
+	font-family: "The Bold Font";
+	src:url("/font/theboldfont.ttf") format ("truetype");
+}
 html, body{
 	width: 100%;
 	height: 100%;
@@ -16,12 +18,8 @@ h2{
 
 }
 
-
-
-
-}
 .nav-link{
-	color: #FFF;
+	color: #FFFFFF !important;
 }
 .bg{
 		background: url("https://nsa39.casimages.com/img/2018/09/12/180912043916904794.jpg") center ;
