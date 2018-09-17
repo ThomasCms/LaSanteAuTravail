@@ -10,38 +10,44 @@
 
 	<body>
 		<header>
-			<div class="container-fluid">
-		      	<nav class="navbar fixed-top navbar-expand-lg">
-			        <a class="navbar-brand" href="index.html"><img src="images/logo-sante.png" alt="LogoAssos"></a>
-			        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			        <span class="navbar-toggler-icon"></span>
-			        </button>
+				<div class="container-fluid">
+			      	<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+				        <a class="navbar-brand" href="index.html"><img src="images/logo-sante.png" alt="LogoAssos"></a>
+				        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				        <span class="navbar-toggler-icon"></span>
+				        </button>
 
-				    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-				        <ul class="navbar-nav">
-					        <li class="nav-item active ">
-					        <a class="nav-link" href="index.html#objectif">Notre objectif</a>
-					        </li>
+					    <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+					        <ul class="navbar-nav">
+						        <li class="nav-item active ">
+						        <a class="nav-link" href="index.html#objectif">Notre objectif</a>
+						        </li>
 
-					        <li class="nav-item active">
-					        <a class="nav-link" href="amenagement.html">L'espace de travail</a>
-					        </li>
+						        <li class="nav-item active">
+						        <a class="nav-link" href="amenagement.html">L'espace de travail</a>
+						        </li>
 
-					        <li class="nav-item active ">
-					        <a class="nav-link" href="activite.html">Les exercices</a>
-					        </li>
+						        <li class="nav-item active ">
+						        <a class="nav-link" href="activite.html">Les exercices</a>
+						        </li>
 
-					        <li class="nav-item active ">
-					        <a class="nav-link" href="index.html#temoignage">Les témoignages</a>
-					        </li>
-				        </ul>
-			        </div> 
-		      	</nav>
-	    	</div>
-		</header>
+						        <li class="nav-item active ">
+						        <a class="nav-link" href="index.html#temoignage">Les témoignages</a>
+						        </li>
+					        </ul>
+				        </div>  
+			      	</nav>
+		    	</div>
+			</header>
 
 		<section class="paddingSection">
-			<h1>Amenagement</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 titreSection">
+						<h1>Amenagements</h1>
+						<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu magna vel augue interdum pharetra. Suspendisse hendrerit suscipit erat ut consequat. Nunc ac ex sem. Aenean in leo in velit semper laoreet. Donec eget placerat ipsum. Fusce dignissim congue dapibus. Phasellus consectetur condi </p>
+					</div>
+				</div>
 			<div class="container ">
 			 	<div class="row">
 				  <div class="col-sm-6">
@@ -169,46 +175,39 @@
 		</section>
 
 		<footer>
-			<div class="container-fluid">
-			<!-- Formulaire -->
-				<div class="row">
-			      	<div class="col-md-6">
+				<div class="container-fluid">
+				<!-- Formulaire -->
+					<div class="row pb-5">
+				      	<div class="col-md-6">
 
-			      		<!-- bouton déroulant -->
-			      		<div class="showp d-flex justify-content-center">
-				        	<a role="button" class="collapsed btn btn-primary btn-lg active" data-toggle="collapse" href="#formFooter" aria-expanded="false" aria-controls="formFooter">Nous contacter</a>
-				        </div>
+					      	<div id="formFooter">
+					      	<form>
+							    <div class="form-group">
+							    <label for="nomPrenomForm">Nom et prénom :</label>
+							    <input type="text" class="form-control" id="nomPrenomForm" placeholder="Nom Prenom">
+							    </div>
+								<div class="form-group">
+								<label for="adresseMailForm">Adresse mail :</label>
+								<input type="email" class="form-control" id="adresseMailForm" placeholder="monemail@boitemail.com">
+								</div>
 
-			      		<!-- le formulaire devra se dérouler quant on clique sur le bouton -->
-				      	<div class="collapse" id="formFooter">
-				      	<form>
-						    <div class="form-group">
-						    <label for="nomPrenomForm">Nom et prénom :</label>
-						    <input type="text" class="form-control" id="nomPrenomForm" placeholder="Nom Prenom">
-						    </div>
-							<div class="form-group">
-							<label for="adresseMailForm">Adresse mail :</label>
-							<input type="email" class="form-control" id="adresseMailForm" placeholder="monemail@boitemail.com">
+							    <div class="form-group">
+							    <label for="messageForm">Message :</label>
+							    <textarea class="form-control" id="messageForm" placeholder="Mon message" rows="4"></textarea>
+							    </div>
+						    </form>
 							</div>
+						 </div>
 
-						    <div class="form-group">
-						    <label for="messageForm">Message :</label>
-						    <textarea class="form-control" id="messageForm" placeholder="Mon message" rows="4"></textarea>
-						    </div>
-					    </form>
-						</div>
-					 </div>
+				      		<!-- Infos légales etc -->
 
-			      		<!-- Infos légales etc -->
-
-			      	<div class="col-md-6">
-			      		<p>Nom de l'association <br />
-			      		Adresse</p>
-						<p><a href="#">Mentions légales</a></p>
-			      	</div>
-			    </div>
-			 </div>
-		</footer>
+				      	<div class="col-md-6 d-flex justify-content-center blabla">
+				      		<p>Nom de l'association - Adresse<br />
+							<a href="mentionsLegales.html" target="_blank">Mentions légales</a></p>
+				      	</div>
+				    </div>
+				 </div>
+			</footer>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

@@ -13,7 +13,7 @@
 			<p class="weil"></p>
 			<header>
 				<div class="container-fluid">
-			      	<nav class="navbar fixed-top navbar-expand-lg">
+			      	<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 				        <a class="navbar-brand" href="index.html"><img src="images/logo-sante.png" alt="LogoAssos"></a>
 				        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				        <span class="navbar-toggler-icon"></span>
@@ -182,13 +182,7 @@
 					<div class="row pb-5">
 				      	<div class="col-md-6">
 
-				      		<!-- bouton déroulant -->
-				      		<div class="showp d-flex justify-content-center">
-					        	<a role="button" class="collapsed btn btn-primary btn-lg active" data-toggle="collapse" href="#formFooter" aria-expanded="false" aria-controls="formFooter">Nous contacter</a>
-					        </div>
-
-				      		<!-- le formulaire devra se dérouler quant on clique sur le bouton -->
-					      	<div class="collapse" id="formFooter">
+					      	<div id="formFooter">
 					      	<form>
 							    <div class="form-group">
 							    <label for="nomPrenomForm">Nom et prénom :</label>
@@ -209,10 +203,9 @@
 
 				      		<!-- Infos légales etc -->
 
-				      	<div class="col-md-6">
-				      		<p>Nom de l'association <br />
-				      		Adresse</p>
-							<p><a href="#">Mentions légales</a></p>
+				      	<div class="col-md-6 d-flex justify-content-center blabla">
+				      		<p>Nom de l'association - Adresse<br />
+							<a href="mentionsLegales.html" target="_blank">Mentions légales</a></p>
 				      	</div>
 				    </div>
 				 </div>

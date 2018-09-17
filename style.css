@@ -272,3 +272,19 @@ footer
 .pb-5, .py-5 {
     padding-bottom: 0rem!important;
 }
+
+.blabla
+{
+	padding-top: 8%;
+}
+
+@font-face
+{
+	font-family: 'Merriweather';
+	src: url('font/Merriweather-Bold.ttf')  format('truetype');
+}
+
+h1
+{
+	font-family: Merriweather;
+}
