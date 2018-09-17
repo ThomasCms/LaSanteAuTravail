@@ -1,8 +1,9 @@
 /*----style CSS container---*/
 @font-face{
 	font-family: "The Bold Font";
-	src:url("/font/theboldfont.ttf") format ("truetype");
+	src:url("/font/theboldfont.ttf") format("truetype");
 }
+
 html, body
 {
 	width: 100%;
