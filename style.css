@@ -277,3 +277,14 @@ footer
 {
 	padding-top: 8%;
 }
+
+@font-face
+{
+	font-family: 'Merriweather';
+	src: url('font/Merriweather-Bold.ttf')  format('truetype');
+}
+
+h1
+{
+	font-family: Merriweather;
+}
