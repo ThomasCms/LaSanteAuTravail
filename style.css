@@ -49,9 +49,7 @@ h2{
 	margin-top: 5em;
 }
 
-.more{
-	margin-right: 10em;
-}
+
 .badge{
 		background-color: #f23369;
 		font-size: 1em;
@@ -189,7 +187,9 @@ h2{
 		background-color: #FFFFFF;
 	}
 	.first_page h1{
-		padding-top: 1em;
+		margin-top: 2em;
+		font-size: 3em; 
+		text-align: center;
 	}
 	.bg{
 		height: auto;
