@@ -3,31 +3,38 @@
 	font-family: "The Bold Font";
 	src:url("font/theboldfont.ttf") format("truetype");
 }
-html, body{
+
+html, body
+{
 	width: 100%;
 	height: 100%;
 	/*font-family: Tahoma, Geneva, Kalimati, sans-serif;*/
 }
-h2{
+h2
+{
 	font-weight: bold;
 }
 
-.navbar {
+.navbar 
+{
 	padding: 0, 0, 0, 0;
 	background-color:#81A4B0;
-
 }
 
-.nav-link{
-	color: #FFFFFF !important;
+.nav-link
+{
+	color: #FFF !important;
 }
+
 .bg{
 		background: url("https://nsa39.casimages.com/img/2018/09/12/180912043916904794.jpg") center ;
 		background-repeat: no-repeat ;
 		background-size: cover;
 		height: 100%;
 }
-.weil{
+
+.weil
+{
 	width: 100%;
 	height: 100%;
 
@@ -38,23 +45,19 @@ h2{
 
 /* --- style CSS first_page --- */
 
-.first_page{
+.first_page
+{
 	margin-top: 0em;
 	margin-bottom: 0em;
-
 }
 
-.first_page h1{
+.first_page h1
+{
 	padding-top: 2em;
 }
 
-.first_page img{
-	margin-top: 5em;
-}
-
-
-
-.badge{
+.badge
+{
 		background-color: #f23369;
 		font-size: 1em;
 		z-index: 4;
@@ -62,25 +65,41 @@ h2{
 }
 
 
-.images{
-	position: relative;
-	margin-left: 2rem;
-	margin-right: 2rem;
-
-}
-
 .titre{
 	position: absolute;
-	opacity: 0;
-	font-size: 1.5em;
-	color: #FFFFFF;
+	width:100%;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+	font-size: 1.4em;
+	display:none;
 	font-weight: bold;
-	top: 60%;
-	left:20%;
 }
 
+.titrePosture {color:rgba(242, 51, 105);}
+.titreExercices {color:rgba(238, 208, 75);}
+.titreTestimony {color:rgba(82, 215, 225);}
 
-/*couleur des thématiques*/
+
+.pages ul {list-style-type: none;margin-top:1em;}
+.pages ul li {
+	position:relative;
+	display: inline-block;
+	overflow:hidden;
+	-webkit-border-radius:128px;
+	-moz-border-radius:128px;
+	border-radius:128px;
+	width:256px;
+	height:256px;
+	padding:0;
+	margin:0;
+	margin-right: 1.5em;
+}
+.pages a:link,
+.pages a:visited,
+.pages a:focus,
+.pages a:active {text-decoration: none;}
 
 .posture{
 	border: 0.5rem solid rgba(242, 51, 105);
@@ -91,35 +110,59 @@ h2{
 	border: 0.5rem solid #fbcd00;
 	background-color: rgba(238, 208, 75, 1);
 }
-
 .testimony{
 	border: 0.5rem solid #00A1AD ;
 	background-color: rgba(82, 215, 225, 1);
 }
 
+/* Voile images d'acceuil */
+.voile {
+	position: absolute;
+	width:100%;
+	height:100%;
+	margin:0;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius:128px;
+	display: none;
+}
+
+.posture:hover .voile {display: block;}
+.posture:hover .titre {display: block;}
+.activity:hover .voile {display: block;}
+.activity:hover .titre {display: block;}
+.testimony:hover .voile {display: block;}
+.testimony:hover .titre {display: block;}
+
 /*  ---style CSS why ---*/
-.why{
+.why
+{
 	margin-top: 5em;
 	margin-bottom: 5em;
 }
 
-.extraitText {
-	color:#429188;
-	font-size:1.8em;
+.extraitText 
+{
+	/*font-family: "The Bold Font";*/
+	color:rgba(242, 51, 105);/*#81A4B0*/;
+	font-size:2em;
 	text-align: center;
-	font-style: italic;
+	/*font-weight: bold;*/
+	/*font-style: italic;*/
 	margin-top:1.5em;
 	margin-bottom:1.5em;
 }
 
 
+
 /* ----- Style CSS TEMOIGNAGE ----- */
-.imgTemoin{
+.imgTemoin
+{
 	width: 65px;
 	height: 65px;
 }
 
-.marginTemoin{
+.marginTemoi
+{
 	margin-bottom: 5em;
 }
 
@@ -141,7 +184,8 @@ h2{
 }
 
 /* Par défaut, collapse est à hauteur zéro, on force sa hauteur, on cache le contenu qui déborde */
-.card .collapse {
+.card .collapse 
+{
 	position: relative;
 	display: block;
 	overflow: hidden;
@@ -149,22 +193,26 @@ h2{
 }
 
 /* Lors de l'ouverture, définition de la hauteur de la div qui est égale à la hauteur du contenu */
-.card .collapse.show {
+.card .collapse.show 
+{
   height: auto;
 }
 
 /* Lors de la transition de fermeture, indique la taille finale que doit avoir la div */
-.card .collapsing {
+.card .collapsing 
+{
 	height: 9.5em;
 }
 
-.card-body .showp {
+.card-body .showp 
+{
 	height: 3em;
 	line-height: 3em;
 	text-align: center;
 }
 
-.card-body a.collapsed, .card-body a:not(.collapsed) {
+.card-body a.collapsed, .card-body a:not(.collapsed) 
+{
 	border-radius: 5px;
 	padding: 0.5em;
 	background-color: #429188;
@@ -188,22 +236,112 @@ h2{
 	solid #429188;
 }
 
-.card-header {
+.card-header 
+{
 	background-color: #429188;/*#01A9DB*/;
 	color:#FFF;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
-.card-header i {
+.card-header i 
+{
 	/*background-color:#FFF;
 	color:#01A9DB;*/
 	padding: 0.5em 0.3em 0.5em 0.3em;
 }
 
-.card-body .imgView {
+.card-body .imgView 
+{
 	float: left;
 	margin: 0 0.5em 0 0;
+}
+
+a
+{
+	color: #000000;
+}
+
+a
+{
+	font-size: 1.3em;
+}
+
+
+.resume
+{
+	color: #FFF;
+}
+
+h1
+{   
+	font-family: The Bold Font;
+	font-size: 6em;
+	letter-spacing: 3px;
+	color: #FFFFFF;
+}
+
+h2
+{
+	font-size: 2.2em;
+}
+
+h3
+{
+	font-size: 2em;
+}
+
+h6
+{
+	font-size: 1.7em;
+}
+
+.paddingSection{
+	padding: 5em 0;
+}
+
+/* navbar */
+
+nav
+{
+	background-color: rgb(120, 125, 110, 0.8); /* la 4 eme valeur définis l'opacité (valable uniquement en rgb)*/
+}
+
+
+.navbar {
+	padding: 0, 0, 0, 0;
+}
+
+.navbar-brand
+{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* footer */
+
+footer
+{
+	background-color:#81A4B0;
+}
+
+.showp
+{
+	padding-top: 3.5%;
+}
+
+.pb-5, .py-5 
+{
+    padding-bottom: 0rem!important;
+}
+
+.blabla
+{
+	padding-top: 8%;
+}
+
+.testimonies{
+	background-color: rgba(0,161,173,0.3);
 }
 
 @media only screen and (max-width: 320px) {
@@ -243,119 +381,4 @@ h2{
 	}
 
 	.pages {background-color:#FFF;}
-}
-
-a
-{
-	color: #000000;
-}
-
-a,
-{
-	font-size: 1.3em;
-
-}
-.resume{
-	color: #FFF;
-}
-
-.resume
-{
-	color: #FFF;
-}
-
-
-h1
-{   
-	font-family: The Bold Font;
-	font-size: 6em;
-	letter-spacing: 3px;
-	color: #FFFFFF;
-}
-
-h2
-{
-	font-size: 2.2em;
-}
-
-h3
-{
-	font-size: 2em;
-}
-
-h6
-{
-	font-size: 1.7em;
-}
-
-/* Voile images d'acceuil */
-
-
-
-.voile:hover{
-	background-color: #36393A;/*gris foncé*/
-}
-
-
-.voile:hover .titre{
-	opacity: 1;
-	color: rgba(242, 51, 105);/*rose*/
-	z-index: 2;
-}
-
-
-
-
-.paddingSection{
-	padding: 10em 0;
-
-}
-
-/* navbar */
-
-nav
-{
-	background-color: rgb(120, 125, 110, 0.8); /* la 4 eme valeur définis l'opacité (valable uniquement en rgb)*/
-}
-
-
-
-.navbar {
-	padding: 0, 0, 0, 0;
-}
-
-.navbar-brand
-{
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-/* footer */
-
-footer
-{
-	background-color: rgb(120, 125, 110, 0.8);
-}
-
-.showp
-{
-	padding-top: 3.5%;
-}
-
-.pb-5, .py-5 {
-    padding-bottom: 0rem!important;
-}
-
-.blabla
-{
-	padding-top: 8%;
-}
-
-
-.voile:hover{
-	background-color: #36393A;/*gris foncé*/
-
-}
-.testimonies{
-	background-color: rgba(0,161,173,0.3);
 }
