@@ -1,7 +1,7 @@
 /*----style CSS container---*/
 @font-face{
 	font-family: "The Bold Font";
-	src:url("/font/theboldfont.ttf") format ("truetype");
+	src:url("font/theboldfont.ttf") format("truetype");
 }
 html, body{
 	width: 100%;
@@ -259,7 +259,6 @@ a,
 	color: #FFF;
 }
 
-<<<<<<< HEAD
 .resume
 {
 	color: #FFF;
@@ -319,10 +318,7 @@ nav
 	background-color: rgb(120, 125, 110, 0.8); /* la 4 eme valeur définis l'opacité (valable uniquement en rgb)*/
 }
 
-.nav-link
-{
-	color: white;
-}
+
 
 .navbar {
 	padding: 0, 0, 0, 0;
