@@ -14,7 +14,7 @@ html, body
 .navbar 
 {
 	padding: 0, 0, 0, 0;
-	background-color:#BDBDBD;
+	background-color:#2D2C26;
 }
 
 .nav-link
@@ -238,8 +238,12 @@ p{
 	font-size: 1.5em;
 }
 
-.resume
-{
+
+p{
+	font-size: 1.3em;
+}
+
+.resume{
 	color: #FFF;
 }
 .resume a{
@@ -277,7 +281,7 @@ h6
 }
 
 .paddingSection{
-	padding: 5em 0;
+	padding: 5em 0 0 0;
 }
 .paddingSection h1{
 	color: #000;
@@ -306,7 +310,8 @@ nav
 
 footer
 {
-	background-color:#81A4B0;
+	background-color:#2B2C26;
+	color: #FFF;
 }
 
 .showp
@@ -324,7 +329,7 @@ footer
 	padding-top: 8%;
 }
 
-.testimonies{
+.testimonies, .allerplusloin {
 	background-color: rgba(0,161,173,0.3);
 }
 
