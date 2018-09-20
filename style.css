@@ -1,388 +1,117 @@
-/*----style CSS container---*/
-@font-face{
+/*Polices*/
+@font-face {
 	font-family: "The Bold Font";
-	src:url("font/theboldfont.ttf") format("truetype");
+	src: url("font/theboldfont(1).ttf") format("truetype");
 }
 
-html, body
-{
-	width: 100%;
-	height: 100%;
-	/*font-family: Tahoma, Geneva, Kalimati, sans-serif;*/
-}
+body{font-family:Arial,Helvetica,sans-serif;}
 
-.navbar 
-{
-	padding: 0, 0, 0, 0;
-	background-color:#2D2C26;
-}
-
-.nav-link
-{
-	color: #FFF !important;
-	font-weight: bold;
-	margin: 1em;
-}
-
-.bg{
-		background: url("https://nsa39.casimages.com/img/2018/09/12/180912043916904794.jpg") center ;
-		background-repeat: no-repeat ;
-		background-size: cover;
-		height: 100%;
-}
-
-.weil
-{
-	width: 100%;
-	height: 100%;
-
-    background: radial-gradient(ellipse at top, #000000 40%, #FFFFFF);
-	opacity: 0.5;
-	position: absolute;
-}
-
-/* --- style CSS first_page --- */
-
-.first_page
-{
-	margin-top: 0em;
-	margin-bottom: 0em;
-}
-
-.first_page h1
-{
-	padding-top: 2em;
-}
-
-.titre{
-	position: absolute;
-	width:100%;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	text-align:center;
-	font-size: 1.8em;
-	font-weight: bold;
-	color: #FFFFFF;
-	text-shadow: 2px 2px 2px #645D55;
-}
-
-
-
-.pages ul {list-style-type: none;margin-top:8em;padding-left: 0px;}
-.pages ul li {
-	position:relative;
-	display: inline-block;
-	overflow:hidden;
-	-webkit-border-radius:70px;
-	-moz-border-radius:70px;
-	border-radius:70px;
-	width:310px;
-	height:150px;
-
-}
-.pages a:link,
-.pages a:visited,
-.pages a:focus,
-.pages a:active {text-decoration: none;}
-
-.posture{
-	border: 0.2rem solid rgba(242, 51, 105);
-	background-color: rgba(215, 107, 115, 1);
-}
-
-.activity{
-	border: 0.2rem solid #FFBB00;
-	background-color: rgba(238, 208, 75, 1);
-	margin-left: 5em;
-	margin-right: 5em;
-}
-.testimony{
-	border: 0.2rem solid #00A1AD ;
-	background-color: rgba(82, 215, 225, 1);
-}
-
-/* Voile images d'acceuil */
-
-
-/*  ---style CSS why ---*/
-.why
-{
-	margin-top: 5em;
-	margin-bottom: 5em;
-}
-
-.extraitText 
-{
-	/*font-family: "The Bold Font";*/
-	color:rgba(242, 51, 105);/*#81A4B0*/;
-	font-size:2em;
-	text-align: center;
-	/*font-weight: bold;*/
-	/*font-style: italic;*/
-	margin-top:1.5em;
-	margin-bottom:1.5em;
-}
-
-
-
-/* ----- Style CSS TEMOIGNAGE ----- */
-.imgTemoin
-{
-	width: 65px;
-	height: 65px;
-}
-
-.marginTemoin
-{
-	margin-bottom: 5em;
-}
-
-/* ----- Style CSS CARDS ----- */
-.titreSection 
-{
-	text-align:center;
-}
-
-.titreSection h1 
-{
-	font-weight: bold;font-size:2em;margin:1em;
-}
-
-.titreSection p 
-{
-	font-size:1.5em;
-	margin:1em;
-}
-
-/* Par défaut, collapse est à hauteur zéro, on force sa hauteur, on cache le contenu qui déborde */
-.card .collapse 
-{
-	position: relative;
-	display: block;
-	overflow: hidden;
-	height: 9.5em;
-}
-
-/* Lors de l'ouverture, définition de la hauteur de la div qui est égale à la hauteur du contenu */
-.card .collapse.show 
-{
-  height: auto;
-}
-
-/* Lors de la transition de fermeture, indique la taille finale que doit avoir la div */
-.card .collapsing 
-{
-	height: 9.5em;
-}
-
-.card-body .showp 
-{
-	height: 3em;
-	line-height: 3em;
-	text-align: center;
-}
-
-.card-body a.collapsed, .card-body a:not(.collapsed) 
-{
-	border-radius: 5px;
-	padding: 0.5em;
-	background-color: #429188;
-	color:#FFF;
-	/*font-weight: 600;*/
-}
-
-/* Applique au balise a qui sont associées à la classe .collapsed, le contenu ci-dessous */
-.card-body a.collapsed:after {
-  content: '▼ Déplier';
-}
-
-/* Applique au balise a qui NE SONT PAS associées à la classe .collapsed, le contenu ci-dessous */
-.card-body a:not(.collapsed):after {
-  content: '▲ Replier';
-}
-
-.card 
-{
-	border:1px 
-	solid #429188;
-}
-
-.card-header 
-{
-	background-color: #429188;/*#01A9DB*/;
-	color:#FFF;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.card-header i 
-{
-	/*background-color:#FFF;
-	color:#01A9DB;*/
-	padding: 0.5em 0.3em 0.5em 0.3em;
-}
-
-.card-body .imgView 
-{
-	float: left;
-	margin: 0 0.5em 0 0;
-}
-
-a
-{
-	color: #000000;
-	font-size: 1.3em;
-}
-p{
-	font-size: 1.5em;
-}
-
-
-p{
-	font-size: 1.3em;
-}
-
-.resume{
-	color: #FFF;
-}
-.resume a{
-	color:#FFF;
-	text-decoration: underline;
-	font-style: italic;
-	font-size: 0.8em;
-}
-.resume:hover a{
-	color: rgba(242, 51, 105);
-}
-
-h1
-{   
-	font-family: The Bold Font;
-	font-size: 6em;
-	letter-spacing: 3px;
-	color: #FFFFFF;
-}
-
-h2
-{
-	font-weight: bold;
-	font-size: 2.2em;
-}
-
-h3
-{
-	font-size: 2em;
-}
-
-h6
-{
-	font-size: 1.7em;
-}
-
-.paddingSection{
-	padding: 5em 0 0 0;
-}
-.paddingSection h1{
-	color: #000;
+h1{   
+	font-family: "The Bold Font";
 	font-size: 4em;
+	letter-spacing: 3px;
 }
 
-/* navbar */
+h2 {font-size: 2.2em;font-family: "The Bold Font";letter-spacing: 1.5px;}
 
-nav
-{
-	background-color: rgb(120, 125, 110, 0.8); /* la 4 eme valeur définis l'opacité (valable uniquement en rgb)*/
-}
+h3{font-size: 1.5em;font-family: "The Bold Font";letter-spacing: 1.5px;}
+
+h6{font-size: 1.7em; font-weight: bold;}
+
+a{color: #000000;}
+
+.navbar a {font-size: 1.3em;}
+
+p{font-size: 1.3em;}
 
 
+.paddingSection{padding: 5em 0 0 0;}
+
+
+/*header*/
 .navbar {
 	padding: 0, 0, 0, 0;
-}
-
-.navbar-brand
-{
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
-/* footer */
-
-footer
-{
 	background-color:#2B2C26;
+
+}
+.nav-link{color: #FFF; font-weight: bold;}
+
+.nav-item{margin-right:1em;}
+
+.nav-link:hover {text-decoration: underline;color: rgba(242, 51, 105)}
+
+.navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); 
+}
+
+/*introduction*/
+.introduction{
+	padding-top: 12em;
+	padding-bottom: 6em;
+	background: url("images/image_de_fond2.jpg") center ;
+	background-repeat: no-repeat ;
+	background-size: cover;
+	text-align: center;
+}
+.introduction h1 {color: #FFFFFF;	font-size: 6em;}
+.resume{
 	color: #FFF;
-}
-
-.showp
-{
-	padding-top: 3.5%;
-}
-
-.pb-5, .py-5 
-{
-    padding-bottom: 0rem!important;
-}
-
-.blabla
-{
-	padding-top: 8%;
-}
-
-.testimonies, .allerplusloin {
-	background-color: rgba(0,161,173,0.3);
-}
-
-@media only screen and (max-width: 320px) {
-	html, body {
-		width: auto;
-		height: auto;
-
-	}
-	.pages{
-		background-color: #FFFFFF;
-	}
-
-	.first_page h1{
-		margin-top: 2em;
-		font-size: 3em; 
-		text-align: center;
-		padding-top: 1em;
-	}
-
-	.bg{
-		height: auto;
-	}
-
-	.card-body .imgView {float: none;text-align: center;}
-	html, body{
-		width: auto;
-		height: auto;
-	}
-	.activity{
-	margin-left: 0em;
-	margin-right:0em;
+	font-weight: bold;
 	margin-top: 2em;
-	margin-bottom: 2em; 
+}
+.introduction a { color: rgba(242,51,105,1); text-decoration: underline;}
+
+.introduction hr {border: 1.5px solid  #FFFFFF;width: 20%;}
+
+/*pictos*/
+.picto {margin-top:4em;margin-bottom:4em;}
+.picto hr.posture {border: 1.5px solid #f23369;width: 20%;}
+.picto hr.activity {border: 1.5px solid #fba000;width: 20%;}
+.picto hr.testimony {border: 1.5px solid #00A1AD;width: 20%;}
+.picto p {font-family: "The Bold Font";letter-spacing: 3px;}
+.picto img {border:none;filter: drop-shadow(1px 1px 1px black);}
+.picto a:hover {color:#000;text-decoration: underline;}
+.picto img:hover {filter: drop-shadow(5px 5px 5px black);}
+
+
+
+/*padding section*/
+.objectifs {background-color:  #eaecee; padding-bottom: 12em;}
+.objectifs hr{border: 1.5px solid  #000;width: 20%;margin-bottom: 7em;}
+.objectifs h1 {margin-top: 2em;}
+.objectifs img{
+	box-shadow:5px 5px 5px #888888;
 }
 
-.pages ul {
-	margin-top:2em;
-}
-.paddingSection{
-	padding: 0em;
-	margin:2em;
-}
-.weil
-{
-	width: 100%;
-	height: 29.7em;
+
+.extraitText {
+	color:#f23369;
+	font-size:2.3em;
+	text-align: center;
+	margin-top: 2.5em;
+	margin-bottom:2.5em;
+	text-shadow: 2px 2px #CCC;
+	font-style: italic;
 }
 
+/*témoignages*/
+.temoignage h1 {margin-top: 2em;}
+.temoignage hr{border: 1.5px solid  #000;width: 20%;margin-bottom: 7em;}
+.temoignage p{font-size: em;}
+.temoignage hr.testimony {border: 1.5px solid #00A1AD;margin-bottom: 0.5em;width: 30%;}
+.temoignage img{box-shadow: 3px 3px 5px grey;}
+iframe{
+	margin-top: 3em;
 }
+
+
 
 /* FORMULAIRE */
 
+.contactus{
+	background-color: #2B2C26;
+	color: #FFF;
+}
 
 .form-control {
     background-color: #2B2C26;
@@ -429,3 +158,38 @@ textarea.form-control {
     width:auto;
 }
 
+.legalmention{
+	color: #FFF;
+}
+
+
+@media only screen and (max-width: 320px) {
+
+	.introduction h1 {font-size: 3em;letter-spacing: 1.5px;}
+	.introduction{padding-top: 10em;}
+	h1 {font-size: 2em;}
+	.objectifs h1 {margin-top: 1em;}
+	.objectifs hr{margin-bottom: 4em;}
+	.paddingSection{padding: 2em 0 0 0;}
+	.extraitText {font-size:1.8em;}
+	.objectifs {padding-bottom: 3em;}
+	.formHeight{height:20em;}
+	.formHeight button{margin-left: 4em; margin-top: 2em;}
+	
+}
+
+@media (min-width: 321px) and (max-width: 768px) { 
+	.introduction h1{font-size: 4em;}
+	.paddingSection{padding: 2em 0 0 0;}
+	.objectifs {padding-bottom: 5em;}
+	.formHeight{height:22em;}
+	.formHeight button{margin-left: 9em; margin-top: 2em;}
+}
+
+
+@media (min-width: 992px) { 
+}
+
+@media (min-width: 1200px) {
+
+}
