@@ -207,7 +207,7 @@ textarea.form-control {
 
 .card-body .imgView {
 	float: left;
-	margin: 0 0.5em 0 0;
+	margin: 0 1em 0 0;
 	box-shadow: 3px 3px 5px grey;
 }
 
@@ -235,8 +235,6 @@ textarea.form-control {
   content: '▲ Replier';
 }
 
-
-
 .cardsActivity hr {border: 1.5px solid #fba000;width: 20%;}
 .cardsPosture hr {border: 1.5px solid #f23369;width: 20%;}
 
@@ -249,12 +247,13 @@ textarea.form-control {
 .cardsActivity .card {border:1px solid #fba000;box-shadow: 2px 2px 4px rgb(251,160,0,0.4);}
 .cardsPosture .card {border:1px solid #f23369;box-shadow: 2px 2px 4px rgb(242,51,105,0.5);}
 
+.cardsActivity .card:hover {box-shadow: 5px 5px 5px rgb(251,160,0,0.4);}
+.cardsActivity .card:hover .card-header {background-image: linear-gradient(rgb(251,160,0,0.4) 40%, rgb(251,160,0,8));}
+
+.cardsPosture .card:hover {box-shadow: 5px 5px 5px rgb(242,51,105,0.5);}
+.cardsPosture .card:hover .card-header {background-image: linear-gradient(rgb(242,51,105,0.4) 40%, rgb(242,51,105,0.8));}
 
 .moreInformations {background-color: #eaecee;}
-
-
-
-
 
 
 
