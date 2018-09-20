@@ -31,7 +31,7 @@ p{font-size: 1.3em;}
 /*header*/
 .navbar {
 	padding: 0, 0, 0, 0;
-	background-color:#2D2C26;
+	background-color:#2B2C26;
 
 }
 .nav-link{color: #FFF; font-weight: bold;}
@@ -79,6 +79,9 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30
 .objectifs {background-color:  #eaecee; padding-bottom: 12em;}
 .objectifs hr{border: 1.5px solid  #000;width: 20%;margin-bottom: 7em;}
 .objectifs h1 {margin-top: 2em;}
+.objectifs img{
+	box-shadow:5px 5px 5px #888888;
+}
 
 
 .extraitText {
@@ -97,11 +100,18 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30
 .temoignage p{font-size: em;}
 .temoignage hr.testimony {border: 1.5px solid #00A1AD;margin-bottom: 0.5em;width: 30%;}
 .temoignage img{box-shadow: 3px 3px 5px grey;}
+iframe{
+	margin-top: 3em;
+}
 
 
 
 /* FORMULAIRE */
 
+.contactus{
+	background-color: #2B2C26;
+	color: #FFF;
+}
 
 .form-control {
     background-color: #2B2C26;
@@ -151,10 +161,7 @@ textarea.form-control {
 .legalmention{
 	color: #FFF;
 }
-.contactus{
-	background-color: #2B2C26;
-	color: #FFF;
-}
+
 
 @media only screen and (max-width: 320px) {
 
@@ -166,6 +173,8 @@ textarea.form-control {
 	.paddingSection{padding: 2em 0 0 0;}
 	.extraitText {font-size:1.8em;}
 	.objectifs {padding-bottom: 3em;}
+	.formHeight{height:20em;}
+	.formHeight button{margin-left: 4em; margin-top: 2em;}
 	
 }
 
@@ -173,6 +182,8 @@ textarea.form-control {
 	.introduction h1{font-size: 4em;}
 	.paddingSection{padding: 2em 0 0 0;}
 	.objectifs {padding-bottom: 5em;}
+	.formHeight{height:22em;}
+	.formHeight button{margin-left: 9em; margin-top: 2em;}
 }
 
 
