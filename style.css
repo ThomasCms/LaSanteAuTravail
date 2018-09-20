@@ -8,20 +8,24 @@ body{font-family:Arial,Helvetica,sans-serif;}
 
 h1{   
 	font-family: "The Bold Font";
-	font-size: 6em;
+	font-size: 4em;
 	letter-spacing: 3px;
-	color: #FFFFFF;
 }
 
-h2 {font-size: 2.2em;}
+h2 {font-size: 2.2em;font-family: "The Bold Font";letter-spacing: 1.5px;}
 
-h3{font-size: 2em;}
+h3{font-size: 1.5em;font-family: "The Bold Font";letter-spacing: 1.5px;}
 
-h6{font-size: 1.7em;}
+h6{font-size: 1.7em; font-weight: bold;}
 
 a{color: #000000;}
 
-a, p {font-size: 1.3em;}
+.navbar a {font-size: 1.3em;}
+
+p{font-size: 1.3em;}
+
+
+.paddingSection{padding: 5em 0 0 0;}
 
 
 /*header*/
@@ -36,14 +40,87 @@ a, p {font-size: 1.3em;}
 
 .nav-link:hover {text-decoration: underline;color: rgba(242, 51, 105)}
 
+.navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); 
+}
 
-/*container first page*/
+/*introduction*/
 .introduction{
-	padding-top: 15em;
-	padding-bottom: 15em;
+	padding-top: 12em;
+	padding-bottom: 6em;
 	background: url("images/image_de_fond2.jpg") center ;
 	background-repeat: no-repeat ;
 	background-size: cover;
-	height: 100%;
+	text-align: center;
+}
+.introduction h1 {color: #FFFFFF;	font-size: 6em;}
+.resume{
+	color: #FFF;
+	font-weight: bold;
+	margin-top: 2em;
+}
+.introduction a { color: rgba(242,51,105,1); text-decoration: underline;}
+
+.introduction hr {border: 1.5px solid  #FFFFFF;width: 20%;}
+
+/*pictos*/
+.picto {margin-top:4em;margin-bottom:4em;}
+.picto hr.posture {border: 1.5px solid #f23369;width: 20%;}
+.picto hr.activity {border: 1.5px solid #fba000;width: 20%;}
+.picto hr.testimony {border: 1.5px solid #00A1AD;width: 20%;}
+.picto p {font-family: "The Bold Font";letter-spacing: 3px;}
+.picto img {border:none;filter: drop-shadow(1px 1px 1px black);}
+.picto a:hover {color:#000;text-decoration: underline;}
+.picto img:hover {filter: drop-shadow(5px 5px 5px black);}
+
+
+
+/*padding section*/
+.objectifs {background-color:  #eaecee; padding-bottom: 12em;}
+.objectifs hr{border: 1.5px solid  #000;width: 20%;margin-bottom: 7em;}
+.objectifs h1 {margin-top: 2em;}
+
+
+.extraitText {
+	color:#f23369;
+	font-size:2.3em;
+	text-align: center;
+	margin-top: 2.5em;
+	margin-bottom:2.5em;
+	text-shadow: 2px 2px #CCC;
+	font-style: italic;
 }
 
+/*témoignages*/
+.temoignage h1 {margin-top: 2em;}
+.temoignage hr{border: 1.5px solid  #000;width: 20%;margin-bottom: 7em;}
+.temoignage p{font-size: em;}
+.temoignage hr.testimony {border: 1.5px solid #00A1AD;margin-bottom: 0.5em;width: 30%;}
+.temoignage img{box-shadow: 3px 3px 5px grey;}
+
+@media only screen and (max-width: 320px) {
+
+	.introduction h1 {font-size: 3em;letter-spacing: 1.5px;}
+	.introduction{padding-top: 10em;}
+	h1 {font-size: 2em;}
+	.objectifs h1 {margin-top: 1em;}
+	.objectifs hr{margin-bottom: 4em;}
+	.paddingSection{padding: 2em 0 0 0;}
+	.extraitText {font-size:1.8em;}
+	.objectifs {padding-bottom: 3em;}
+	
+}
+
+@media (min-width: 321px) and (max-width: 768px) { 
+	.introduction h1{font-size: 4em;}
+	.paddingSection{padding: 2em 0 0 0;}
+	.objectifs {padding-bottom: 5em;}
+}
+
+
+@media (min-width: 992px) { 
+}
+
+@media (min-width: 1200px) {
+
+}
