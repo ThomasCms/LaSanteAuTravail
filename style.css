@@ -193,3 +193,101 @@ textarea.form-control {
 @media (min-width: 1200px) {
 
 }
+
+/* ----- Style CSS CARDS ----- */
+.titreSection 
+{
+	text-align:center;
+}
+
+.titreSection h1 
+{
+	font-weight: bold;font-size:2em;margin:1em;
+}
+
+.titreSection p 
+{
+	font-size:1.5em;
+	margin:1em;
+}
+
+/* Par défaut, collapse est à hauteur zéro, on force sa hauteur, on cache le contenu qui déborde */
+.card .collapse 
+{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	height: 9.5em;
+}
+
+/* Lors de l'ouverture, définition de la hauteur de la div qui est égale à la hauteur du contenu */
+.card .collapse.show 
+{
+  height: auto;
+}
+
+/* Lors de la transition de fermeture, indique la taille finale que doit avoir la div */
+.card .collapsing 
+{
+	height: 9.5em;
+}
+
+.card-body .showp 
+{
+	height: 3em;
+	line-height: 3em;
+	text-align: center;
+}
+
+.card-body a.collapsed, .card-body a:not(.collapsed) 
+{
+	border-radius: 5px;
+	padding: 0.5em;
+	background-color: #429188;
+	color:#FFF;
+	/*font-weight: 600;*/
+}
+
+/* Applique au balise a qui sont associées à la classe .collapsed, le contenu ci-dessous */
+.card-body a.collapsed:after {
+  content: '▼ Déplier';
+}
+
+/* Applique au balise a qui NE SONT PAS associées à la classe .collapsed, le contenu ci-dessous */
+.card-body a:not(.collapsed):after {
+  content: '▲ Replier';
+}
+
+.card 
+{
+	border:1px 
+	solid #429188;
+}
+
+.card-header 
+{
+	background-color: #429188;/*#01A9DB*/;
+	color:#FFF;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.card-header i 
+{
+	/*background-color:#FFF;
+	color:#01A9DB;*/
+	padding: 0.5em 0.3em 0.5em 0.3em;
+}
+
+.card-body .imgView 
+{
+	float: left;
+	margin: 0 0.5em 0 0;
+}
+
+.card-body .showp 
+{
+	height: 3em;
+	line-height: 3em;
+	text-align: center;
+}
