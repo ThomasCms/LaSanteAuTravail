@@ -185,43 +185,66 @@
 				
 			</section>
 
-			<footer>
+		<footer>
 				<div class="container-fluid">
-				<!-- Formulaire -->
-					<div class="row">
-				      	<div class="col-md-6">
-
-				      		<!-- bouton déroulant -->
-				      		<div class="showp d-flex justify-content-center">
-					        	<a role="button" class="collapsed btn btn-primary btn-lg active" data-toggle="collapse" href="#formFooter" aria-expanded="false" aria-controls="formFooter">Nous contacter</a>
-					        </div>
-
-				      		<!-- le formulaire devra se dérouler quant on clique sur le bouton -->
-					      	<div class="collapse" id="formFooter">
-					      	<form>
-							    <div class="form-group">
-							    <label for="nomPrenomForm">Nom et prénom :</label>
-							    <input type="text" class="form-control" id="nomPrenomForm" placeholder="Nom Prenom">
-							    </div>
-								<div class="form-group">
-								<label for="adresseMailForm">Adresse mail :</label>
-								<input type="email" class="form-control" id="adresseMailForm" placeholder="monemail@boitemail.com">
-								</div>
-
-							    <div class="form-group">
-							    <label for="messageForm">Message :</label>
-							    <textarea class="form-control" id="messageForm" placeholder="Mon message" rows="4"></textarea>
-							    </div>
-						    </form>
+<!-- Formulaire -->
+					<div class="row" >
+						<h2 class="col mt-3 mb-3 d-flex justify-content-start" >Nous contacter</h2>
+					</div>
+					
+			      	<form>
+			      		<div class="row mb-0 formHeight justify-content-start">
+			      			<div class="col-12 col-md-5 col-lg-5 d-flex flex-column justify-content-between
+" >								    
+							    	<div class="form-row">
+									    <label class=" col-3 col-md-3 col-lg-3 col-form-label text-right pb-1" for="firstname">Prénom</label>
+							    		<div class="col-6 col-md-8 col-lg-9 pb-1 ">
+							    			<input type="text" class="form-control" id="firstname" placeholder="John" name="firstname">
+								    	</div>
+								    </div>
+						    	
+						    	
+						    		<div class="form-row">
+								    	<label class="col-3 col-md-3 col-lg-3 col-form-label text-right pb-1" for="lastname">Nom</label>
+							    		<div class="col-6 col-md-8 col-lg-9 pb-1 ">
+							    			<input type="text" class="form-control" id="lastname" placeholder="Devos" name="lastname">
+								    	</div>
+								    </div>
+							    
+							    	<div class="form-row">
+								    	<label class="col-3 col-md-3 col-lg-3 col-form-label text-right pb-1" for="email">Email</label>
+									    <div class="col-6 col-md-8 col-lg-9">
+									      	<input type="email" class="form-control" id="adresseMailForm" name="email" placeholder="john.devos@wcs.com">
+									    </div>
+									</div>
+								
 							</div>
-						 </div>
+						
+							    
+						    <div class="col-12 col-md-5 col-lg-5" >
+			      				<div class="row form-row formHeightGlobal">	
+							    	<label class="col-3 col-md-3 col-lg-2 col-form-label text-right"  for="messageForm">Message</label>
+						    		<div class="col-6 col-md-9 col-lg-10">
+							    		<textarea class="form-control" id="messageForm" placeholder="Mon message" rows="4"></textarea>
+							    	</div>
+						    	</div>
+						    </div>
 
-				      		<!-- Infos légales etc -->
+						    <div class="col-12 col-md-2 col-lg-2 d-flex flex-column justify-content-between align-items-center ">
+						    	<div class="text-center d-none d-md-block"><img src="images/logo-sante.png" alt="LogoAssos">
+						    	</div>
+						    	<button type="submit" class="btn btn-form align-self-center">Envoyer</button>
+						    </div>
 
-				      	<div class="col-md-6">
-				      		<p>Nom de l'association <br />
-				      		Adresse</p>
-							<p><a href="#">Mentions légales</a></p>
+					    </div>
+				    </form>					
+
+<!-- Infos légales etc -->
+					<div class="row justify-content-center bg-dark" style="margin-top:2em;">
+				      	<div class="col-sm-6 d-flex">
+				      		<small class="text-center">© 2018. Association <i>La santé au travail</i> domicilié au Lab'O, 1 Avenue du Champ de Mars, 45074 Orléans. <br />
+				      		Tous droits réservés. Reproduction interdite.<br />
+							</small>
 				      	</div>
 				    </div>
 				 </div>
