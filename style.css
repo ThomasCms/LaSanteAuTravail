@@ -53,12 +53,14 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30
 	background-size: cover;
 	text-align: center;
 }
-.introduction h1 {color: #FFFFFF;	font-size: 6em;}
+.introduction h1 {color: #FFFFFF; font-size: 6em;}
+
 .resume{
 	color: #FFF;
 	font-weight: bold;
 	margin-top: 2em;
 }
+
 .introduction a { color: rgba(242,51,105,1); text-decoration: underline;}
 
 .introduction hr {border: 1.5px solid  #FFFFFF;width: 20%;}
@@ -134,8 +136,6 @@ textarea.form-control {
     height: 100%;
 }
 
-
-
 .formHeight{
 	height:8em;
 }
@@ -162,6 +162,101 @@ textarea.form-control {
 	color: #FFF;
 }
 
+/* Cards */
+.titreSection {
+	padding-top: 5em;
+	padding-bottom: 0em;
+	background: url("images/image_de_fond2.jpg") center ;
+	background-repeat: no-repeat ;
+	background-size: cover;
+	text-align: center;
+}
+
+.titreSection h1 {color: #FFF;font-size:4em;}
+
+.contenuTitreSection {
+	color:#FFF;
+	font-weight: bold;
+	margin-top: 4em;
+	margin-bottom:0;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+}
+
+.card-header {
+	border-bottom: 1px solid #CCC;
+	color:#000;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.card-header i {padding: 0.5em 0.3em 0.5em 0.3em;}
+
+/* Par défaut, collapse est à hauteur zéro, on force sa hauteur, on cache le contenu qui déborde */
+.card .collapse {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	height: 10em;
+}
+
+/* Lors de l'ouverture, définition de la hauteur de la div qui est égale à la hauteur du contenu */
+.card .collapse.show {height: auto;}
+
+/* Lors de la transition de fermeture, indique la taille finale que doit avoir la div */
+.card .collapsing {height: 10em;}
+
+.card-body .imgView {
+	float: left;
+	margin: 0 0.5em 0 0;
+	box-shadow: 3px 3px 5px grey;
+}
+
+.card-body .showp {
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+}
+
+.card-body a.collapsed, .card-body a:not(.collapsed) {
+	border-radius: 5px;
+	padding: 0.5em;
+	box-shadow: 1px 1px 3px grey;
+	color:#000;
+	font-size:1.1em;
+}
+
+/* Applique au balise a qui sont associées à la classe .collapsed, le contenu ci-dessous */
+.card-body a.collapsed:after {
+  content: '▼ Déplier';
+}
+
+/* Applique au balise a qui NE SONT PAS associées à la classe .collapsed, le contenu ci-dessous */
+.card-body a:not(.collapsed):after {
+  content: '▲ Replier';
+}
+
+
+
+.cardsActivity hr {border: 1.5px solid #fba000;width: 20%;}
+.cardsPosture hr {border: 1.5px solid #f23369;width: 20%;}
+
+.cardsActivity .contenuTitreSection {background-color: rgb(251,160,0,0.5);}
+.cardsPosture .contenuTitreSection {background-color: rgb(242,51,105,0.5);}
+
+.cardsActivity .card-body a.collapsed, .cardsActivity .card-body a:not(.collapsed) {background-color: #fba000;}
+.cardsPosture .card-body a.collapsed, .cardsPosture .card-body a:not(.collapsed) {background-color: #f23369;}
+
+.cardsActivity .card {border:1px solid #fba000;box-shadow: 2px 2px 4px rgb(251,160,0,0.4);}
+.cardsPosture .card {border:1px solid #f23369;box-shadow: 2px 2px 4px rgb(242,51,105,0.5);}
+
+
+.moreInformations {background-color: #eaecee;}
+
+
+
+
+
+
 
 @media only screen and (max-width: 320px) {
 
@@ -175,6 +270,10 @@ textarea.form-control {
 	.objectifs {padding-bottom: 3em;}
 	.formHeight{height:20em;}
 	.formHeight button{margin-left: 4em; margin-top: 2em;}
+	.titreSection {padding-top: 7em;}
+	.titreSection h1 {color: #FFF;font-size:2em;}
+	.contenuTitreSection {font-weight: normal;}
+	.card-body .imgView {float: none;text-align: center;box-shadow: none;margin-bottom:1em;}
 	
 }
 
@@ -192,102 +291,4 @@ textarea.form-control {
 
 @media (min-width: 1200px) {
 
-}
-
-/* ----- Style CSS CARDS ----- */
-.titreSection 
-{
-	text-align:center;
-}
-
-.titreSection h1 
-{
-	font-weight: bold;font-size:2em;margin:1em;
-}
-
-.titreSection p 
-{
-	font-size:1.5em;
-	margin:1em;
-}
-
-/* Par défaut, collapse est à hauteur zéro, on force sa hauteur, on cache le contenu qui déborde */
-.card .collapse 
-{
-	position: relative;
-	display: block;
-	overflow: hidden;
-	height: 9.5em;
-}
-
-/* Lors de l'ouverture, définition de la hauteur de la div qui est égale à la hauteur du contenu */
-.card .collapse.show 
-{
-  height: auto;
-}
-
-/* Lors de la transition de fermeture, indique la taille finale que doit avoir la div */
-.card .collapsing 
-{
-	height: 9.5em;
-}
-
-.card-body .showp 
-{
-	height: 3em;
-	line-height: 3em;
-	text-align: center;
-}
-
-.card-body a.collapsed, .card-body a:not(.collapsed) 
-{
-	border-radius: 5px;
-	padding: 0.5em;
-	background-color: #429188;
-	color:#FFF;
-	/*font-weight: 600;*/
-}
-
-/* Applique au balise a qui sont associées à la classe .collapsed, le contenu ci-dessous */
-.card-body a.collapsed:after {
-  content: '▼ Déplier';
-}
-
-/* Applique au balise a qui NE SONT PAS associées à la classe .collapsed, le contenu ci-dessous */
-.card-body a:not(.collapsed):after {
-  content: '▲ Replier';
-}
-
-.card 
-{
-	border:1px 
-	solid #429188;
-}
-
-.card-header 
-{
-	background-color: #429188;/*#01A9DB*/;
-	color:#FFF;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.card-header i 
-{
-	/*background-color:#FFF;
-	color:#01A9DB;*/
-	padding: 0.5em 0.3em 0.5em 0.3em;
-}
-
-.card-body .imgView 
-{
-	float: left;
-	margin: 0 0.5em 0 0;
-}
-
-.card-body .showp 
-{
-	height: 3em;
-	line-height: 3em;
-	text-align: center;
 }
