@@ -61,6 +61,11 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30
 	margin-top: 2em;
 }
 
+.resume strong{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
 .introduction a { color: rgba(242,51,105,1); text-decoration: underline;}
 
 .introduction hr {border: 1.5px solid  #FFFFFF;width: 20%;}
